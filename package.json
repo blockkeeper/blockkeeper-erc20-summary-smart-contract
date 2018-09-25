@@ -1,0 +1,27 @@
+{
+  "name": "erc20-summary-smart-contract",
+  "version": "0.8.0",
+  "repository": "https://github.com/weigandf/erc20-summary-smart-contract",
+  "description": "There are plenty smart contracts implementing the ERC20 standard. All those contracts are on the blockchain but nowhere connected. This makes it especially hard to query the amount of tokens for a certain address somebody owns. Each ERC20 token needs to be queried one by one. This smart contract intends to summarize the amount of tokens owned by multiple ERC20 contracts which is usefull if you dont want to use thrid party APIs like Etherscan. This contact was written as part of the ConsenSys Academy 2018 Developer Program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha",
+    "dev": "node server.js",
+    "build": "node ./ethereum/build.js",
+    "validate": "node ./ethereum/validate.js",
+    "deploy": "npm run build && node ./ethereum/deploy.js"
+  },
+  "author": "Florian Weigand (Synalytix UG)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "ethereumjs-util": "^5.1.5",
+    "fs-extra": "^7.0.0",
+    "ganache-cli": "^6.0.3",
+    "mocha": "^4.1.0",
+    "solc": "^0.4.20",
+    "truffle-hdwallet-provider": "0.0.3",
+    "truffle-privatekey-provider": "0.0.6",
+    "web3": "1.0.0-beta.26"
+  }
+}
