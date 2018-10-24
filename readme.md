@@ -36,7 +36,7 @@ You can find and deploy the user interface (refere to the local readme.md) at ou
 ## Play With It
 
 The contract and the ABI are published on Etherscan and can be found here:
-https://rinkeby.etherscan.io/address/0x53F37D610c6A2014477649B4C46f6197aF56BAa1#readContract
+https://etherscan.io/address/0x000003ed2eb44cded8ade31c01dda60da466b2d1#readContract
 
 ## License
 
